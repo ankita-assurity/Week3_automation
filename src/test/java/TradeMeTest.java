@@ -44,9 +44,8 @@ public class TradeMeTest {
 
     @Test
     public void searchgold1() throws Exception {
-        homePage.searchforGold();
+        homePage.searchforGold("gold");
         Thread.sleep(5000);
-
 
     }
 
@@ -71,7 +70,7 @@ public class TradeMeTest {
 
     @Test
     public void goldlisting() throws Exception {
-        resultsPage = homePage.searchforGold();
+        resultsPage = homePage.searchforGold("gold");
         Thread.sleep(5000);
 
         //Print out the number of listings
@@ -104,7 +103,7 @@ public class TradeMeTest {
 
     @Test
     public void footertask() throws Exception {
-        homePage.searchforGold();
+        homePage.searchforGold("gold");
         WebDriverWait wait = new WebDriverWait(webDriver, 10);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("site-footer")));
