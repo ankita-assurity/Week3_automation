@@ -74,10 +74,10 @@ public class TradeMeTest {
         Thread.sleep(5000);
 
         //Print out the number of listings
-        String listings = resultsPage.getTotalCount();
+        int listings = resultsPage.getTotalCount();
 
         //Print out the current price of the top item shown
-        String price = resultsPage.getTotalCount();
+        int price = resultsPage.getTotalCount();
 
         //Click on the List View button
         System.out.println(("Price = " + price));

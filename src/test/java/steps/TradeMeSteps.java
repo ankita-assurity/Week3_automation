@@ -22,6 +22,7 @@ public class TradeMeSteps {
     @Given("I am conducting a TradeMe search")
     public void i_am_conducting_a_trade_me_search() {
         WebDriverManager.chromedriver().setup();
+
         ChromeOptions options = new ChromeOptions();
         if (("true").equals(System.getenv("HEADLESS_CHROME"))) {
             options.addArguments("--headless");
@@ -30,7 +31,7 @@ public class TradeMeSteps {
         }
         webDriver = new ChromeDriver(options);
 //        webDriver = new ChromeDriver();
-      //  webDriver.get("https://www.tmsandbox.co.nz/");
+        webDriver.get("https://www.tmsandbox.co.nz/");
          homePage = new HomePage(webDriver);
 
 
