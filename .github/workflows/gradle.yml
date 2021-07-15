@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  cucumber:
 
     runs-on: ubuntu-latest
 
@@ -25,3 +25,5 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew cucumber 
+      env:
+          HEADLESS_CHROME: true
