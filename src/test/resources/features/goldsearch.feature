@@ -6,3 +6,7 @@ Feature: Search Count
     When I search for "Gold"
     Then I see 28 results
 
+#  Scenario: Search for Gold items shows count
+#    Given I am conducting a TradeMe search
+#    When I search for "books"
+#    Then I see 769 results
